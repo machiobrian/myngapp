@@ -1,16 +1,16 @@
 {
-  "name": "modules-ui",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "modules/ui/src",
+  "name": "modules-shared-ui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "modules/shared/ui/src",
   "prefix": "lib",
-  "tags": [],
+  "tags": ["type:feature", "scope:shared"],
   "projectType": "library",
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "modules/ui/jest.config.ts",
+        "jestConfig": "modules/shared/ui/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -24,7 +24,10 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["modules/ui/**/*.ts", "modules/ui/**/*.html"]
+        "lintFilePatterns": [
+          "modules/shared/ui/**/*.ts",
+          "modules/shared/ui/**/*.html"
+        ]
       }
     }
   }

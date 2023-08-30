@@ -17,7 +17,7 @@
     "paths": {
       "modules/orders": ["modules/orders/src/index.ts"],
       "modules/products": ["modules/products/src/index.ts"],
-      "modules/ui": ["modules/ui/src/index.ts"]
+      "modules/shared/ui": ["modules/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

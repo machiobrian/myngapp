@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+// import { OrdersComponent } from 'modules/orders'; // not allowed
 
 @Component({
   selector: 'lib-products',
